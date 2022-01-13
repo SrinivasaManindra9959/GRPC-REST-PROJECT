@@ -19,6 +19,7 @@ public class RestGrpcController {
     @GetMapping(value="/rest/getEmployee",consumes = MediaType.APPLICATION_JSON_VALUE,
     produces = MediaType.APPLICATION_JSON_VALUE)
     public Employee getEmployeeData(@RequestParam(value="id")Integer id){
+        
         return restService.getEmployeeData(id);
     }
 
